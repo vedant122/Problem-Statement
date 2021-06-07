@@ -1,6 +1,6 @@
 
 body{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
 }
 .header {
     margin-top: -8px;
@@ -9,12 +9,24 @@ body{
     width: auto;
 }
 #day{
-    margin-left: 20px;
+    margin-left: 9px;
     width: 40px;
+    transition: 1s;
+}
+#day:hover{
+    transition: 1s;
+    background-color: ghostwhite;
+    cursor: pointer;
 }
 #night{
     margin-left: 20px;
     width: 40px;
+    transition: 1s;
+}
+#night:hover{
+    transition: 1s;
+    background-color: ghostwhite;
+    cursor: pointer;
 }
 .menu {
     display: flex;
@@ -28,11 +40,10 @@ body{
 }
 #top{
     position: fixed;
-    width: 10px;
+    width: 30px;
     right: 10px;
     top: 15%;
-    height: 10px;
-    box-shadow: 0px 0px 20px 10px  snow;
+    height: 30px;
 }
 #para1 {
     margin-left: 120px;
@@ -90,60 +101,6 @@ body{
     margin-left: 50px;
 }
 
-.brand {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: rgb(255, 255, 255);
-    height: 50px;
-    align-items: center;
-    height: 40px;
-    padding: 5px;
-}
-
-#image2 {
-    height: 50px;
-    width: 50px;
-}
-
-#image3 {
-    height: 50px;
-    width: 50px;
-}
-
-#image4 {
-    height: 50px;
-    width: 50px;
-}
-
-#image5 {
-    height: 50px;
-    width: 50px;
-}
-
-#image6 {
-    height: 50px;
-    width: 50px;
-}
-
-#image7 {
-    height: 50px;
-    width: 50px;
-}
-
-#image8 {
-    height: 50px;
-    width: 50px;
-}
-
-#image9 {
-    height: 50px;
-    width: 50px;
-}
-
-#image10 {
-    height: 50px;
-    width: 50px;
-}
 
 .p1 {
     background-color: rgb(0, 0, 0);
@@ -221,7 +178,7 @@ body{
     font-family: 'Staatliches', cursive;
     font-size: 37px;
     align-items: center;
-    color: thistle;
+    color: darkkhaki;
     font-weight: bold;
 }
 
@@ -253,7 +210,7 @@ body{
 }
 
 .rodetails {
-    color: thistle;
+    color: darkkhaki;
     position: absolute;
     margin-top: -285px;
     margin-left: 222px;
@@ -270,7 +227,7 @@ body{
     margin-top: -296px;
     font-family: 'Staatliches', cursive;
     font-size: 37px;
-    color: thistle;
+    color: darkkhaki;
 }
 
 .grid {
@@ -335,7 +292,7 @@ body{
     position: absolute;
     margin-top: -37px;
     margin-left: 0px;
-    width: 481px;
+    width: 300px;
     font-family: 'Staatliches', cursive;
     color: aquamarine;
     font-size: 37px;
@@ -459,7 +416,7 @@ body{
     margin-left: 925px;
     margin-top: -296px;
     font-size: 37px;
-    color: thistle;
+    color: darkkhaki;
     font-family: 'Staatliches', cursive;
 }
 
@@ -469,7 +426,7 @@ body{
     margin-left: 481px;
     width: 333px;
     font-size: 37px;
-    color: thistle;
+    color: darkkhaki;
     font-family: 'Staatliches', cursive;
 }
 
@@ -495,7 +452,7 @@ body{
     margin-left: 125px;
     margin-top: -296px;
     font-size: 37px;
-    color: thistle;
+    color: darkkhaki;
     font-family: 'Staatliches', cursive;
 }
 
@@ -505,7 +462,7 @@ body{
     margin-left: 581px;
     width: 333px;
     font-size: 37px;
-    color: thistle;
+    color: darkkhaki;
     font-family: 'Staatliches', cursive;
 }
 
@@ -571,7 +528,7 @@ body{
     position: absolute;
     margin-top: -37px;
     margin-left: 0px;
-    width: 481px;
+    width: 300px;
     font-family: 'Staatliches', cursive;
     color: aquamarine;
     font-size: 37px;
@@ -707,7 +664,7 @@ body{
     margin-left: 925px;
     margin-top: -296px;
     font-size: 37px;
-    color: thistle;
+    color: darkkhaki;
     font-family: 'Staatliches', cursive;
 }
 
@@ -717,7 +674,7 @@ body{
     margin-left: 481px;
     width: 333px;
     font-size: 37px;
-    color: thistle;
+    color: darkkhaki;
     font-family: 'Staatliches', cursive;
 }
 
@@ -745,7 +702,7 @@ body{
     margin-left: 125px;
     margin-top: -296px;
     font-size: 37px;
-    color: thistle;
+    color: darkkhaki;
     font-family: 'Staatliches', cursive;
 }
 
@@ -755,7 +712,7 @@ body{
     margin-left: 581px;
     width: 333px;
     font-size: 37px;
-    color: thistle;
+    color: darkkhaki;
     font-family: 'Staatliches', cursive;
 }
 
@@ -821,7 +778,7 @@ body{
     position: absolute;
     margin-top: -37px;
     margin-left: 0px;
-    width: 481px;
+    width: 300px;
     font-family: 'Staatliches', cursive;
     color: aquamarine;
     font-size: 37px;
@@ -980,6 +937,9 @@ body{
 /* Media-1300px */
 
 @media screen and (max-width: 1900px) {
+    #top{
+        display: none;
+    }
     #p1 {
         padding-top: 74px;
         align-items: center;
@@ -1008,7 +968,7 @@ body{
     }
     #the {
         margin-top: 144px;
-        color: cyan;
+        color: rgb(179, 0, 255);
     }
     .oneplus {
         margin-top: 185px;
@@ -1031,7 +991,6 @@ body{
         font-family: 'Staatliches', cursive;
         font-size: 29px;
         align-items: center;
-        color: rgb(140, 212, 206);
     }
     .three {
         position: absolute;
@@ -1108,7 +1067,6 @@ body{
         position: absolute;
         margin-top: 3px;
         margin-left: 37px;
-        color: aquamarine;
         font-family: 'Staatliches', cursive;
         font-size: 19px;
         width: 222px;
@@ -1125,7 +1083,6 @@ body{
         margin-left: 1px;
         width: 222px;
         font-family: 'Staatliches', cursive;
-        color: aquamarine;
         font-size: 19px;
     }
     .iphone {
@@ -1203,14 +1160,14 @@ body{
         justify-content: center;
         font-size: 56px;
         font-family: 'Orelega One', cursive;
-        color: cyan;
+        color: rgb(179, 0, 255);
     }
     #prmid {
         display: flex;
         justify-content: center;
         font-size: 56px;
         font-family: 'Orelega One', cursive;
-        color: cyan;
+        color: rgb(179, 0, 255);
     }
     .pocox3 {
         margin-top: 185px;
@@ -1230,7 +1187,7 @@ body{
         font-family: 'Staatliches', cursive;
         font-size: 29px;
         align-items: center;
-        color: thistle;
+        color: darkkhaki;
     }
     .pthree {
         position: absolute;
@@ -1239,11 +1196,11 @@ body{
         margin-top: -227px;
         font-family: 'Staatliches', cursive;
         font-size: 29px;
-        color: thistle;
+        color: darkkhaki;
     }
     #the1 {
         margin-top: 144px;
-        color: cyan;
+        color: rgb(179, 0, 255);
     }
     .pocox3 {
         margin-top: 185px;
@@ -1266,7 +1223,6 @@ body{
         font-family: 'Staatliches', cursive;
         font-size: 29px;
         align-items: center;
-        color: rgb(140, 212, 206);
     }
     .pthree {
         position: absolute;
@@ -1343,7 +1299,6 @@ body{
         position: absolute;
         margin-top: 3px;
         margin-left: 37px;
-        color: aquamarine;
         font-family: 'Staatliches', cursive;
         font-size: 19px;
         width: 222px;
@@ -1378,7 +1333,6 @@ body{
         position: absolute;
         margin-top: 3px;
         margin-left: 37px;
-        color: aquamarine;
         font-family: 'Staatliches', cursive;
         font-size: 19px;
         width: 222px;
@@ -1395,7 +1349,6 @@ body{
         margin-left: 3px;
         width: 222px;
         font-family: 'Staatliches', cursive;
-        color: aquamarine;
         font-size: 19px;
     }
     .iqoo {
@@ -1429,7 +1382,6 @@ body{
         margin-left: 3px;
         width: 222px;
         font-family: 'Staatliches', cursive;
-        color: aquamarine;
         font-size: 19px;
     }
     #the2 {
@@ -1438,14 +1390,14 @@ body{
         justify-content: center;
         font-size: 56px;
         font-family: 'Orelega One', cursive;
-        color: cyan;
+        color: rgb(179, 0, 255);
     }
     #prlow {
         display: flex;
         justify-content: center;
         font-size: 56px;
         font-family: 'Orelega One', cursive;
-        color: cyan;
+        color: rgb(179, 0, 255);
     }
     .pocom3 {
         margin-top: 185px;
@@ -1465,7 +1417,7 @@ body{
         font-family: 'Staatliches', cursive;
         font-size: 29px;
         align-items: center;
-        color: thistle;
+        color: darkkhaki;
     }
     .pothree {
         position: absolute;
@@ -1474,7 +1426,7 @@ body{
         margin-top: -227px;
         font-family: 'Staatliches', cursive;
         font-size: 29px;
-        color: thistle;
+        color: darkkhaki;
     }
     #foimage {
         height: 250px;
@@ -1544,7 +1496,6 @@ body{
         position: absolute;
         margin-top: 3px;
         margin-left: 37px;
-        color: aquamarine;
         font-family: 'Staatliches', cursive;
         font-size: 19px;
         width: 222px;
@@ -1561,7 +1512,6 @@ body{
         margin-left: 1px;
         width: 222px;
         font-family: 'Staatliches', cursive;
-        color: aquamarine;
         font-size: 19px;
     }
     .c20 {
@@ -1579,7 +1529,6 @@ body{
         position: absolute;
         margin-top: 3px;
         margin-left: 37px;
-        color: aquamarine;
         font-family: 'Staatliches', cursive;
         font-size: 19px;
         width: 222px;
@@ -1596,7 +1545,6 @@ body{
         margin-left: 3px;
         width: 222px;
         font-family: 'Staatliches', cursive;
-        color: aquamarine;
         font-size: 19px;
     }
     .realme8 {
@@ -1613,7 +1561,6 @@ body{
         position: absolute;
         margin-top: 3px;
         margin-left: 19px;
-        color: aquamarine;
         font-family: 'Staatliches', cursive;
         font-size: 19px;
         width: 222px;
@@ -1630,7 +1577,6 @@ body{
         margin-left: 3px;
         width: 222px;
         font-family: 'Staatliches', cursive;
-        color: aquamarine;
         font-size: 19px;
     }
     .buy{
@@ -1684,18 +1630,6 @@ body{
         margin-left: 19px;
         height: 60px;
     }
-    #image10 {
-        display: none;
-    }
-    #image9 {
-        display: none;
-    }
-    #image8 {
-        display: none;
-    }
-    #image7 {
-        display: none;
-    }
     #para1 {
         margin-left: 150px;
     }
@@ -1733,14 +1667,14 @@ body{
         margin-top: 555px;
         font-size: 150px;
         font-family: 'Orelega One', cursive;
-        color: cyan;
+        color: rgb(179, 0, 255);
     }
     #pr {
         display: flex;
         justify-content: center;
         font-size: 150px;
         font-family: 'Orelega One', cursive;
-        color: cyan;
+        color: rgb(179, 0, 255);
     }
     .oneplus {
         margin-top: 185px;
@@ -1763,7 +1697,6 @@ body{
         font-family: 'Staatliches', cursive;
         font-size: 35px;
         align-items: center;
-        color: rgb(255, 255, 255);
     }
     .three {
         position: absolute;
@@ -1908,14 +1841,14 @@ body{
         margin-top: 2355px;
         font-size: 150px;
         font-family: 'Orelega One', cursive;
-        color: cyan;
+        color: rgb(179, 0, 255);
     }
     #prmid {
         display: flex;
         justify-content: center;
         font-size: 150px;
         font-family: 'Orelega One', cursive;
-        color: cyan;
+        color: rgb(179, 0, 255);
     }
     .pocox3 {
         margin-top: 285px;
@@ -1937,7 +1870,6 @@ body{
         font-family: 'Staatliches', cursive;
         font-size: 35px;
         align-items: center;
-        color: rgb(255, 255, 255);
     }
     .pthree {
         position: absolute;
@@ -1966,7 +1898,6 @@ body{
         font-family: 'Staatliches', cursive;
         font-size: 35px;
         align-items: center;
-        color: rgb(255, 255, 255);
     }
     .rethree {
         position: absolute;
@@ -2066,7 +1997,6 @@ body{
         font-family: 'Staatliches', cursive;
         font-size: 35px;
         align-items: center;
-        color: rgb(255, 255, 255);
     }
     #iqprice{
         margin-top: 0px;
@@ -2085,14 +2015,14 @@ body{
         margin-top: 2255px;
         font-size: 150px;
         font-family: 'Orelega One', cursive;
-        color: cyan;
+        color: rgb(179, 0, 255);
     }
     #prlow {
         display: flex;
         justify-content: center;
         font-size: 150px;
         font-family: 'Orelega One', cursive;
-        color: cyan;
+        color: rgb(179, 0, 255);
     }
     .pocom3 {
         margin-top: 285px;
@@ -2115,7 +2045,6 @@ body{
         font-family: 'Staatliches', cursive;
         font-size: 35px;
         align-items: center;
-        color: rgb(255, 255, 255);
     }
     .pothree {
         position: absolute;
@@ -2132,7 +2061,7 @@ body{
     }
     .fo2s {
         margin-top: 74px;
-        height: 900px;
+        height: 1000px;
         background-color: black;
         border-radius: 37px;
     }
@@ -2144,7 +2073,6 @@ body{
         font-family: 'Staatliches', cursive;
         font-size: 35px;
         align-items: center;
-        color: rgb(255, 255, 255);
     }
     .fothree {
         position: absolute;
@@ -2177,7 +2105,6 @@ body{
         font-family: 'Staatliches', cursive;
         font-size: 35px;
         align-items: center;
-        color: rgb(255, 255, 255);
     }
     #naprice{
         margin-top: 0px;
@@ -2213,7 +2140,6 @@ body{
         font-family: 'Staatliches', cursive;
         font-size: 35px;
         align-items: center;
-        color: rgb(255, 255, 255);
     }
 
     #cprice{
@@ -2251,7 +2177,6 @@ body{
         font-family: 'Staatliches', cursive;
         font-size: 35px;
         align-items: center;
-        color: rgb(255, 255, 255);
     }
     #realprice{
         margin-top: 0px;
@@ -2318,12 +2243,12 @@ body{
     #the{
         font-size: 53px;
         margin-left: 10px;
-        color: cyan;
+        color: rgb(179, 0, 255);
     }
     #pr{
         font-size: 53px;
         margin-left: 30px;
-        color: cyan;
+        color: rgb(179, 0, 255);
     }
     .oneplus{
         height: 900px;
@@ -2408,12 +2333,12 @@ body{
         margin-top: 3100px;
         font-size: 53px;
         margin-left: 10px;
-        color: cyan;
+        color: rgb(179, 0, 255);
     }
     #prmid{
         font-size: 53px;
         margin-left: 30px;
-        color: cyan;
+        color: rgb(179, 0, 255);
     }
 
     .pocox3{
@@ -2509,12 +2434,12 @@ body{
         margin-top: 3300px;
         font-size: 53px;
         margin-left: 10px;
-        color: cyan;
+        color: rgb(179, 0, 255);
     }
     #prlow{
         font-size: 53px;
         margin-left: 30px;
-        color: cyan;
+        color: rgb(179, 0, 255);
     }
 
     .pocom3{
@@ -2696,7 +2621,7 @@ body{
     }
     #the{
         margin-top: 130px !important;
-        color: cyan;
+        color: rgb(179, 0, 255);
     }
     .change{
         width:280px !important;
@@ -2756,7 +2681,7 @@ body{
     }
     #the{
         margin-top: 130px !important;
-        color: cyan;
+        color: rgb(179, 0, 255);
     }
     .change{
         width:250px !important;
