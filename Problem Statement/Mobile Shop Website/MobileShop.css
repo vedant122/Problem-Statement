@@ -11,21 +11,21 @@ body{
 #day{
     margin-left: 9px;
     width: 40px;
-    transition: 1s;
+    transition: 0.5s;
 }
 #day:hover{
-    transition: 1s;
-    background-color: ghostwhite;
+    transition: 0.5s;
+    background-color: rgb(253, 253, 253);
     cursor: pointer;
 }
 #night{
     margin-left: 20px;
     width: 40px;
-    transition: 1s;
+    transition: 0.5s;
 }
 #night:hover{
-    transition: 1s;
-    background-color: ghostwhite;
+    transition: 0.5s;
+    background-color: rgb(255, 255, 255);
     cursor: pointer;
 }
 .menu {
@@ -48,48 +48,48 @@ body{
 #para1 {
     margin-left: 120px;
     padding: 3px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 #para1:hover {
-    transition: 1s;
-    background-color: ghostwhite;
+    transition: 0.5s;
+    color: orange;
     cursor: pointer;
 }
 
 #para2 {
     margin-left: 50px;
     padding: 3px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 #para2:hover {
-    transition: 1s;
-    background-color: ghostwhite;
+    transition: 0.5s;
+    color: orange;
     cursor: pointer;
 }
 
 #para3 {
     margin-left: 50px;
     padding: 3px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 #para3:hover {
-    transition: 1s;
-    background-color: ghostwhite;
+    transition: 0.5s;
+    color: orange;
     cursor: pointer;
 }
 
 #para4 {
     margin-left: 50px;
     padding: 3px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 #para4:hover {
-    transition: 1s;
-    background-color: ghostwhite;
+    transition: 0.5s;
+    color: orange;
     cursor: pointer;
 }
 
